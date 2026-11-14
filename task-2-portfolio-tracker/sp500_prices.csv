@@ -1,0 +1,21 @@
+Symbol,Name,Sector,Price
+AAPL,Apple Inc.,Information Technology,189.95
+MSFT,Microsoft Corp.,Information Technology,378.85
+GOOGL,Alphabet Inc. Class A,Communication Services,140.93
+AMZN,Amazon.com Inc.,Consumer Discretionary,146.09
+NVDA,NVIDIA Corp.,Information Technology,495.22
+META,Meta Platforms Inc.,Communication Services,353.96
+TSLA,Tesla Inc.,Consumer Discretionary,248.48
+BRK.B,Berkshire Hathaway Inc. Class B,Financials,362.14
+JPM,JPMorgan Chase & Co.,Financials,170.10
+V,Visa Inc.,Financials,260.35
+JNJ,Johnson & Johnson,Health Care,157.80
+WMT,Walmart Inc.,Consumer Staples,163.42
+PG,Procter & Gamble Co.,Consumer Staples,149.25
+XOM,Exxon Mobil Corp.,Energy,102.60
+KO,Coca-Cola Co.,Consumer Staples,59.18
+DIS,Walt Disney Co.,Communication Services,91.40
+NFLX,Netflix Inc.,Communication Services,469.20
+INTC,Intel Corp.,Information Technology,43.65
+AMD,Advanced Micro Devices Inc.,Information Technology,138.50
+NKE,Nike Inc. Class B,Consumer Discretionary,107.30

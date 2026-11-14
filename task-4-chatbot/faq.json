@@ -1,0 +1,88 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "keywords": ["hi", "hello", "hey", "hola", "greetings"],
+      "patterns": ["\\bgood (morning|afternoon|evening)\\b", "\\bhow are you\\b"],
+      "response": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?"
+      ]
+    },
+    {
+      "intent": "thanks",
+      "keywords": ["thanks", "thank", "thx", "appreciate"],
+      "patterns": ["\\bthank you\\b"],
+      "response": ["You're welcome! Anything else I can help with?"]
+    },
+    {
+      "intent": "hours",
+      "keywords": ["hours", "open", "opening", "close", "closing", "timing", "timings", "weekend", "sunday", "saturday"],
+      "patterns": ["\\bwhat time\\b.*\\b(open|close)\\b", "\\bbusiness hours\\b", "\\b(are|r) you open\\b"],
+      "response": "We operate Monday through Friday from 9:00 AM to 6:00 PM IST. We are closed on weekends.",
+      "followup": "Our support team is available during business hours. Orders placed online are accepted 24/7 on our website."
+    },
+    {
+      "intent": "pricing",
+      "keywords": ["price", "prices", "pricing", "expensive", "cheap", "discount", "offer", "offers", "coupon"],
+      "patterns": ["\\bhow much\\b", "\\bpromo(tion)?( code)?\\b"],
+      "response": "Our products start at $19. Laptops range from $499 to $1,999, accessories from $19 to $149. Current offers: 10% off your first order with code WELCOME10.",
+      "followup": "Prices on the website are final and include taxes for most regions. Students get an extra 5% off with a valid student ID."
+    },
+    {
+      "intent": "products",
+      "keywords": ["product", "products", "catalog", "laptop", "laptops", "phone", "phones", "headphones", "accessories", "sell", "stock"],
+      "patterns": ["\\bwhat (do|does) (you|the store) (sell|offer)\\b", "\\bin stock\\b"],
+      "response": "We sell laptops, smartphones, headphones, smart-home gadgets and accessories from top brands.",
+      "followup": "Browse the full catalog on our website, or tell me the product type and budget and I'll point you in the right direction."
+    },
+    {
+      "intent": "shipping",
+      "keywords": ["shipping", "ship", "delivery", "deliver", "delivered", "courier", "freight"],
+      "patterns": ["\\bhow long\\b.*\\b(ship|deliver|arrive)\\w*\\b", "\\bwhen (will|does).*\\barrive\\b"],
+      "response": "Standard shipping takes 3-5 business days and is free on orders over $50. Express shipping (1-2 business days) costs $9.99.",
+      "followup": "We ship to over 40 countries. International orders take 7-14 business days and customs fees may apply."
+    },
+    {
+      "intent": "order_tracking",
+      "keywords": ["track", "tracking", "status", "where", "order"],
+      "patterns": ["\\btrack (my|an|the) order\\b", "\\bwhere is my (order|package|parcel)\\b", "\\border status\\b"],
+      "response": "You can track your order from the 'My Orders' page using the tracking link we emailed you, or reply with your order number and our team will check it.",
+      "followup": "Tracking updates can take up to 24 hours after dispatch to appear."
+    },
+    {
+      "intent": "returns",
+      "keywords": ["return", "returns", "refund", "refunds", "exchange", "replace", "replacement", "money back"],
+      "patterns": ["\\bsend (it )?back\\b", "\\bchange my mind\\b"],
+      "response": "You can return any unused item within 30 days for a full refund. Refunds are issued to the original payment method within 5-7 business days.",
+      "followup": "To start a return, go to 'My Orders', select the item and print the prepaid label. Items must be in original packaging."
+    },
+    {
+      "intent": "warranty",
+      "keywords": ["warranty", "guarantee", "guaranteed", "repair", "repairs", "broken", "defective", "damaged"],
+      "patterns": ["\\bstopped working\\b", "\\bnot working\\b"],
+      "response": "All products include a 1-year manufacturer warranty. Extended 2-year protection plans are available at checkout.",
+      "followup": "Keep your invoice as proof of purchase. Warranty does not cover accidental damage unless you bought the protection plan."
+    },
+    {
+      "intent": "payment",
+      "keywords": ["payment", "pay", "paying", "card", "credit", "debit", "paypal", "upi", "emi", "installment", "installments", "cash"],
+      "patterns": ["\\bhow (do|can) i pay\\b", "\\bpayment (method|option)s?\\b"],
+      "response": "We accept Visa, MasterCard, PayPal, UPI and bank transfers. EMI / 0% installments are available on orders above $200.",
+      "followup": "All payments are encrypted and processed through secure gateways. We never store your full card details."
+    },
+    {
+      "intent": "account",
+      "keywords": ["account", "login", "log", "password", "signin", "sign", "register", "signup", "profile", "forgot"],
+      "patterns": ["\\breset (my )?password\\b", "\\bcan'?t (log ?in|sign ?in)\\b", "\\bcreate (an )?account\\b"],
+      "response": "To reset your password, click 'Forgot password' on the login page and follow the email link. To create an account, click 'Sign Up' at the top of the website.",
+      "followup": "If you don't get the reset email within 10 minutes, check your spam folder or contact support."
+    },
+    {
+      "intent": "contact",
+      "keywords": ["contact", "email", "phone", "call", "address", "location", "support", "reach", "human", "agent", "representative"],
+      "patterns": ["\\btalk to (a )?(human|person|agent|someone)\\b", "\\bcustomer (care|service|support)\\b"],
+      "response": "You can reach our support team at support@technest.example or call +1-800-555-0199 during business hours. Our store is at 42 Innovation Street, Hyderabad."
+    }
+  ]
+}
